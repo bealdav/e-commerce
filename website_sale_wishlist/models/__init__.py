@@ -4,3 +4,4 @@
 
 from . import wishlist
 from . import website
+from . import product

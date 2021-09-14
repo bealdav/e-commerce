@@ -33,6 +33,7 @@ class ShopWishList(models.Model):
 class WishlistItem(models.Model):
     _name = 'wishlist.item'
 
+    active = fields.Boolean(default=True)
     wishlist_id = fields.Many2one(
         'wishlist', ondelete='cascade', required=True)
     product_id = fields.Many2one(
